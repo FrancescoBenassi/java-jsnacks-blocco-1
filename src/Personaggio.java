@@ -5,15 +5,17 @@ public abstract class Personaggio {
     private int puntiDifesa;
     private int puntiStamina;
     private int puntiMovimento;
+    private Equipaggiamento equipaggiamento;
 
-    public Personaggio(String nome, int puntiVita, int puntiAttacco, int puntiDifesa, int puntiStamina, int potenza,
-            int resistenza, int puntiMovimento) {
+    public Personaggio(String nome, int puntiVita, int puntiAttacco, int puntiDifesa, int puntiStamina,
+            int puntiMovimento, String nomeEquipaggiamento, int potenza, int resistenza, boolean magia) {
         this.nome = nome;
         this.puntiVita = puntiVita;
         this.puntiAttacco = puntiAttacco;
         this.puntiDifesa = puntiDifesa;
         this.puntiStamina = puntiStamina;
         this.puntiMovimento = puntiMovimento;
+        equipaggiamento = new Equipaggiamento(nomeEquipaggiamento, potenza, resistenza, magia);
     }
 
     public String getNome() {

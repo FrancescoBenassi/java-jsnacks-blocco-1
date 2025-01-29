@@ -2,9 +2,11 @@ public class Guerriera extends Personaggio {
     private int puntiDestrezza;
     private int puntiStrategia;
 
-    public Guerriera(String nome, int puntiVita, int puntiAttacco, int puntiDifesa, int puntiStamina, int potenza,
-            int resistenza, int puntiMovimento, int puntiDestrezza, int puntiStrategia) {
-        super(nome, puntiVita, puntiAttacco, puntiDifesa, puntiStamina, potenza, resistenza, puntiMovimento);
+    public Guerriera(String nome, int puntiVita, int puntiAttacco, int puntiDifesa, int puntiStamina,
+            int puntiMovimento, String nomeEquipaggiamento, int potenza, int resistenza, boolean magia,
+            int puntiDestrezza, int puntiStrategia) {
+        super(nome, puntiVita, puntiAttacco, puntiDifesa, puntiStamina, puntiMovimento, nomeEquipaggiamento, potenza,
+                resistenza, magia);
         this.puntiDestrezza = puntiDestrezza;
         this.puntiStrategia = puntiStrategia;
     }

@@ -2,9 +2,11 @@ public class Ladra extends Personaggio {
     private int puntiScaltrezza;
     private int puntiIntelligenza;
 
-    public Ladra(String nome, int puntiVita, int puntiAttacco, int puntiDifesa, int puntiStamina, int potenza,
-            int resistenza, int puntiMovimento, int puntiScaltrezza, int puntiIntelligenza) {
-        super(nome, puntiVita, puntiAttacco, puntiDifesa, puntiStamina, potenza, resistenza, puntiMovimento);
+    public Ladra(String nome, int puntiVita, int puntiAttacco, int puntiDifesa, int puntiStamina,
+            int puntiMovimento, String nomeEquipaggiamento, int potenza, int resistenza, boolean magia,
+            int puntiScaltrezza, int puntiIntelligenza) {
+        super(nome, puntiVita, puntiAttacco, puntiDifesa, puntiStamina, puntiMovimento, nomeEquipaggiamento, potenza,
+                resistenza, magia);
         this.puntiScaltrezza = puntiScaltrezza;
         this.puntiIntelligenza = puntiIntelligenza;
     }
