@@ -16,12 +16,12 @@ public class Test {
         ArrayList<String> stringCopy = new ArrayList<>();
         for (int i = a; i <= b; i++) {
             if (a > b) {
-                throw new IllegalArgumentException("Il valore di a non può essere inferiore a quello di b");
+                throw new IllegalArgumentException("Il valore di 'a' non può essere inferiore a quello di 'b'");
             }
             if (a < 0 || b > string.size()) {
                 throw new IllegalArgumentException(
-                        "I valori non possono essere inferiori a 0 e superiori alla lunghezza dell'array inserito " +
-                                +string.size());
+                        "I valori di 'a' e 'b' non possono essere inferiori a 0 e non possono essere superiori alla lunghezza dell'array inserito "
+                                + string.size());
             }
             stringCopy.add(string.get(i));
             System.out.println(string.get(i));
